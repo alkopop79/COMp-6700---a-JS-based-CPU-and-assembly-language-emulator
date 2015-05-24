@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>COMPU</title>
+    <script type='text/javascript' src='comp3.1.js'></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet_comp.css"> 
+</head>
+
+<body>
+    <input type="text" id="text_f" value=" " autofocus>
+    <br><br>
+    <div class="nav">
+        <button onclick="eval()">EXEC</button>
+        <button onclick="saveToRom()">SAVE</button>
+        <button onclick="reset()">RST</button>
+        <button onclick="step()">STEP</button>
+        <button onclick="run()">RUN</button>
+        <button id="stop" value=0 onclick="stop()">STOP</button>
+    </div>
+    <br>
+
+    <div class="displays">
+        DEBUG:
+        <p id="demo">*debugging messages*</p>
+        REG A:
+        <p id="regA">0</p>
+        REG B:
+        <p id="regB">0</p>
+        ACCU:
+        <p id="accu">0</p>
+        <br> ROM:
+        <p id="rom"></p>
+        INS COUNT:
+        <p id="count">0</p>
+        FLAG1:
+        <p id="flag1">0</p>
+<!--
+        DEBUG2:
+        <p id="dbg2"></p>
+-->
+    </div>
+    INSTRUCTIONS:
+    <ol>
+        <li>ADD</li>
+    </ol>
+    
+</body>
+
+</html>
